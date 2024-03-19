@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>p-8</title>
+</head>
+
+<body>
+    <script>
+        let firstLetter = prompt("Enter the first letter of week day (M, T, W, F, S, or U):").toUpperCase();
+        let weekDay;
+        
+        if (firstLetter === "M") {
+            weekDay = "Monday";
+        }
+        else if (firstLetter === "T") {
+            let secondLetter = prompt("Enter the second letter of week day (U or H):").toUpperCase();
+            if (secondLetter === "U") {
+                weekDay = "Tuesday";
+            }
+            else if (secondLetter === "H") {
+                weekDay = "Thursday";
+            }
+            else {
+                weekDay = "Invalid week day";
+            }
+        }
+        else if (firstLetter === "W") {
+            weekDay = "Wednesday";
+        }
+        else if (firstLetter === "F") {
+            weekDay = "Friday";
+        } 
+        else if (firstLetter === "S") {
+            let secondLetter = prompt("Enter the second letter of the week day (A or U):").toUpperCase();
+            if (secondLetter === "A") {
+                weekDay = "Saturday";
+            }
+            else if (secondLetter === "U") {
+                weekDay = "Sunday";
+            }
+            else {
+                weekDay = "Invalid week day";
+            }
+        }
+        else {
+            weekDay = "Invalid week day";
+        }
+        console.log("Week Day:", weekDay);
+    </script>
+</body>
+
+</html>

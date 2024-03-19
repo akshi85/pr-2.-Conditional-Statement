@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>p-9</title>
+</head>
+
+<body>
+    <script>
+        let num1 = 70;
+        let num2 = 80;
+        let num3 = 50;
+        let num4 = 40;
+
+        let maxNumber;
+        if (num1 >= num2) {
+            if (num1 >= num3) {
+                if (num1 >= num4) {
+                    maxNumber = num1;
+                }
+                else {
+                    maxNumber = num4;
+                }
+            }
+            else {
+                if (num3 >= num4) {
+                    maxNumber = num3;
+                }
+                else {
+                    maxNumber = num4;
+                }
+            }
+        }
+        else {
+            if (num2 >= num3) {
+                if (num2 >= num4) {
+                    maxNumber = num2;
+                }
+                else {
+                    maxNumber = num4;
+                }
+            }
+            else {
+                if (num3 >= num4) {
+                    maxNumber = num3;
+                }
+                else {
+                    maxNumber = num4;
+                }
+            }
+        }
+        console.log("Maximum number:", maxNumber);
+
+    </script>
+</body>
+
+</html>
